@@ -14,10 +14,12 @@ class Meme {
     private var score: Int
     private var image: UIImage
     
-    init(name _name: String, score _score: Int, image _image: UIImage) {
+    init(name _name: String) {
         name = _name
-        score = _score
-        image = _image
+        if let optionalImage = UIImage(named: _name) {
+            image = optionalImage
+        }
+        score = Int.random(in: 1 ... 10)
     }
     
     func getName() -> String {
