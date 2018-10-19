@@ -31,6 +31,9 @@
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8h9-UZ-fHt">
                                 <rect key="frame" x="65" y="505" width="244" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="newMemeScoreChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Iyg-QM-O9I"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKk-XO-Raw">
                                 <rect key="frame" x="227" y="155" width="80" height="21"/>
@@ -50,6 +53,9 @@
                                 <rect key="frame" x="148" y="617" width="79" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next meme"/>
+                                <connections>
+                                    <action selector="nextMemeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Cs-Ni-mgf"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DANK MEME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sO-mH-c3T">
                                 <rect key="frame" x="67" y="155" width="97" height="21"/>
@@ -69,6 +75,15 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="dankMemeLabel" destination="7sO-mH-c3T" id="aid-PC-Kex"/>
+                        <outlet property="memeImageView" destination="8Hi-yi-rVt" id="9VN-96-wWC"/>
+                        <outlet property="memeNameLabel" destination="eXc-Vh-e3Q" id="P1r-r0-AvZ"/>
+                        <outlet property="memeScoreLabel" destination="MKk-XO-Raw" id="655-AT-fbv"/>
+                        <outlet property="newMemeScoreLabel" destination="T05-FS-WGe" id="gv2-mv-UZT"/>
+                        <outlet property="newMemeScoreSlider" destination="8h9-UZ-fHt" id="Nov-Rg-aeR"/>
+                        <outlet property="nextMemeButton" destination="1R9-sz-cbL" id="EKB-Ze-8km"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
