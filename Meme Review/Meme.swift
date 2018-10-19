@@ -35,4 +35,20 @@ class Meme {
     func getImage() -> UIImage {
         return image
     }
+    
+    func getMemeLevel() -> String {
+        var level: String
+        if score >= 9 {
+            level = "DANK MEME"
+        } else if score >= 7 {
+            level = "SPICY MEME"
+        } else if score >= 4 {
+            level = "JUST MEME"
+        } else if score >= 2 {
+            level = "POOR MEME"
+        } else {
+            level = "DEAD MEME"
+        }
+        return level
+    }
 }

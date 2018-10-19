@@ -63,7 +63,7 @@
                                     <action selector="nextMemeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Cs-Ni-mgf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DANK MEME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sO-mH-c3T">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DANK MEME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sO-mH-c3T" userLabel="Meme Level Label">
                                 <rect key="frame" x="70" y="182.5" width="97" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -96,8 +96,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="dankMemeLabel" destination="7sO-mH-c3T" id="aid-PC-Kex"/>
                         <outlet property="memeImageView" destination="8Hi-yi-rVt" id="9VN-96-wWC"/>
+                        <outlet property="memeLevelLabel" destination="7sO-mH-c3T" id="7B6-zb-uF5"/>
                         <outlet property="memeNameLabel" destination="eXc-Vh-e3Q" id="P1r-r0-AvZ"/>
                         <outlet property="memeScoreLabel" destination="MKk-XO-Raw" id="655-AT-fbv"/>
                         <outlet property="newMemeScoreLabel" destination="T05-FS-WGe" id="gv2-mv-UZT"/>

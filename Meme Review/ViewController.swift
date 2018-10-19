@@ -30,6 +30,7 @@ class ViewController: UIViewController {
         newMemeScore = memes[currentMeme].getScore()
         newMemeScoreSlider.value = Float(newMemeScore)
         updateNewScoreLabel()
+        memeLevelLabel.text = memes[currentMeme].getMemeLevel()
     }
     
     func updateNewScoreLabel() {
@@ -39,7 +40,7 @@ class ViewController: UIViewController {
     //References
     @IBOutlet weak var nextMemeButton: UIButton!
     @IBOutlet weak var memeNameLabel: UILabel!
-    @IBOutlet weak var dankMemeLabel: UILabel!
+    @IBOutlet weak var memeLevelLabel: UILabel!
     @IBOutlet weak var memeScoreLabel: UILabel!
     @IBOutlet weak var memeImageView: UIImageView!
     @IBOutlet weak var newMemeScoreLabel: UILabel!
