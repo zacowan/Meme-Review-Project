@@ -16,9 +16,7 @@ class Meme {
     
     init(name _name: String) {
         name = _name
-        if let optionalImage = UIImage(named: _name) {
-            image = optionalImage
-        }
+        image = UIImage(named: _name)!
         score = Int.random(in: 1 ... 10)
     }
     
