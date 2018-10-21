@@ -9,6 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let memeReview = MemeReview(withMemes: [
+        "Dos Equis Meme", "Drunk Baby Meme",
+        "Football Meme", "Frozone Meme",
+        "Shaq Meme", "Office Meme"])
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,28 +21,25 @@ class ViewController: UIViewController {
         updateMeme()
     }
     
-    let memes: [Meme] = [Meme(name: "Dos Equis Meme"), Meme(name: "Drunk Baby Meme"),
-                         Meme(name: "Football Meme"), Meme(name: "Frozone Meme"),
-                         Meme(name: "Shaq Meme"), Meme(name: "Office Meme")]
-    var currentMeme = 0
-    var newMemeScore = 0
-    
-    //Functions
+    // Functions
     func updateMeme() {
-        memeNameLabel.text = memes[currentMeme].getName()
-        memeScoreLabel.text = "Score: \(memes[currentMeme].getScore())"
-        memeImageView.image = memes[currentMeme].getImage()
-        newMemeScore = memes[currentMeme].getScore()
-        newMemeScoreSlider.value = Float(newMemeScore)
+        let meme = memeReview.getMeme()
+        let memeName = meme.getName()
+        let memeScore = meme.getScore()
+        
+        memeNameLabel.text = memeName
+        memeScoreLabel.text = "Score: \(memeScore)"
+        memeImageView.image = UIImage(named: memeName)
+        newMemeScoreSlider.value = Float(memeScore)
+        memeLevelLabel.text = meme.getMemeLevel()
         updateNewScoreLabel()
-        memeLevelLabel.text = memes[currentMeme].getMemeLevel()
     }
     
     func updateNewScoreLabel() {
-        newMemeScoreLabel.text = "New Score: \(newMemeScore)"
+        newMemeScoreLabel.text = "New Score: \(Int(newMemeScoreSlider.value))"
     }
     
-    //References
+    // References
     @IBOutlet weak var nextMemeButton: UIButton!
     @IBOutlet weak var memeNameLabel: UILabel!
     @IBOutlet weak var memeLevelLabel: UILabel!
@@ -46,22 +48,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var newMemeScoreLabel: UILabel!
     @IBOutlet weak var newMemeScoreSlider: UISlider!
     
-    //Actions
+    // Actions
     @IBAction func newMemeScoreChanged(_ sender: UISlider) {
-        newMemeScore = Int(sender.value)
         updateNewScoreLabel()
     }
     @IBAction func nextMemeButtonTapped(_ sender: UIButton) {
-        memes[currentMeme].setScore(score: newMemeScore)
-        currentMeme += 1
-        if currentMeme >= memes.count {
-            currentMeme = 0
-        }
+        memeReview.nextMeme(newScore: Int(newMemeScoreSlider.value))
         updateMeme()
     }
-    
-    
-    
 
 }
 

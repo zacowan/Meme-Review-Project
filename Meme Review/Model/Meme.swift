@@ -7,36 +7,29 @@
 //
 
 import Foundation
-import UIKit
 
 class Meme {
     private var name: String
     private var score: Int
-    private var image: UIImage
-    
-    init(name _name: String) {
-        name = _name
-        image = UIImage(named: _name)!
-        score = Int.random(in: 1 ... 10)
+        
+    init(named name: String) {
+        self.name = name
+        score = Int.random(in: 0 ... 10)
     }
     
-    func getName() -> String {
+    public func getName() -> String {
         return name
     }
     
-    func getScore() -> Int {
+    public func getScore() -> Int {
         return score
     }
     
-    func setScore(score newScore: Int) {
+    public func setScore(score newScore: Int) {
         score = newScore
     }
     
-    func getImage() -> UIImage {
-        return image
-    }
-    
-    func getMemeLevel() -> String {
+    public func getMemeLevel() -> String {
         var level: String
         if score >= 9 {
             level = "DANK MEME"

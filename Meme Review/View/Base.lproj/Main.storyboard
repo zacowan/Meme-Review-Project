@@ -35,7 +35,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="8h9-UZ-fHt">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="8h9-UZ-fHt">
                                 <rect key="frame" x="68" y="490.5" width="239" height="31"/>
                                 <connections>
                                     <action selector="newMemeScoreChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Iyg-QM-O9I"/>
@@ -48,7 +48,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meme Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXc-Vh-e3Q">
-                                <rect key="frame" x="137.5" y="131.5" width="100" height="21"/>
+                                <rect key="frame" x="137.5" y="111.5" width="100" height="21"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -63,9 +63,9 @@
                                     <action selector="nextMemeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Cs-Ni-mgf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DANK MEME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sO-mH-c3T" userLabel="Meme Level Label">
-                                <rect key="frame" x="70" y="182.5" width="97" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEME LEVEL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sO-mH-c3T" userLabel="Meme Level Label">
+                                <rect key="frame" x="70" y="182.5" width="100" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -91,7 +91,7 @@
                             <constraint firstItem="eXc-Vh-e3Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="puy-IX-rfj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8h9-UZ-fHt" secondAttribute="trailing" constant="70" id="s2m-Gu-aA2"/>
                             <constraint firstItem="T05-FS-WGe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="vdt-Sz-Rk9"/>
-                            <constraint firstItem="7sO-mH-c3T" firstAttribute="top" secondItem="eXc-Vh-e3Q" secondAttribute="bottom" constant="30" id="vv0-RY-8Ar"/>
+                            <constraint firstItem="7sO-mH-c3T" firstAttribute="top" secondItem="eXc-Vh-e3Q" secondAttribute="bottom" constant="50" id="vv0-RY-8Ar"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
