@@ -43,15 +43,15 @@ class ViewController: UIViewController {
     }
     
     func applyViewStyling() {
-        viewStyler.viewStyle(view: view)
-        viewStyler.buttonStyle(button: nextMemeButton)
-        viewStyler.scoreLabelStyle(label: memeScoreLabel)
-        viewStyler.scoreLabelStyle(label: newMemeScoreLabel)
-        viewStyler.nameLabelStyle(label: memeNameLabel)
-        viewStyler.levelLabelStyle(label: memeLevelLabel)
-        viewStyler.memeImageStyle(imageView: memeImageView)
-        viewStyler.titleLabelStyle(label: memeReviewTitle)
-        viewStyler.sliderStyle(slider: newMemeScoreSlider)
+        viewStyler.styleView(view: view)
+        viewStyler.styleButton(button: nextMemeButton)
+        viewStyler.styleScoreLabel(label: memeScoreLabel)
+        viewStyler.styleScoreLabel(label: newMemeScoreLabel)
+        viewStyler.styleNameLabel(label: memeNameLabel)
+        viewStyler.styleLevelLabel(label: memeLevelLabel)
+        viewStyler.styleImageView(imageView: memeImageView)
+        viewStyler.styleTitleLabel(label: memeReviewTitle)
+        viewStyler.styleSlider(slider: newMemeScoreSlider)
     }
     
     // References
