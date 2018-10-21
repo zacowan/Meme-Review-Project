@@ -12,7 +12,7 @@ import UIKit
 class ViewStyler {
     
     public func buttonStyle(button: UIButton) {
-        button.layer.cornerRadius = 20
+        button.layer.cornerRadius = 35
         button.backgroundColor = #colorLiteral(red: 0.3568627451, green: 0.3176470588, blue: 0.8235294118, alpha: 1)
         button.setTitleColor(#colorLiteral(red: 0.9013727119, green: 0.897710084, blue: 0.9449579832, alpha: 1), for: .normal)
         button.titleLabel?.font = UIFont(name: "AvenirNext-Bold", size: 17)
