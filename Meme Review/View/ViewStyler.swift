@@ -38,9 +38,9 @@ class ViewStyler {
     }
     
     public func styleImageView(imageView: UIImageView) {
-        //imageView.layer.cornerRadius = 20
+        imageView.layer.cornerRadius = 20
         imageView.clipsToBounds = true
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleToFill
     }
     
     public func styleTitleLabel(label: UILabel) {

@@ -10,10 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let memeReview = MemeReview(withMemes: [
-        "Dos Equis", "Drunk Baby",
-        "Football", "Frozone",
-        "Shaq", "Office"])
+    let memeReview = MemeReview(withMemes: ["Dos Equis", "Drunk Baby", "Football", "Frozone", "Shaq", "Office"])
     
     let viewStyler = ViewStyler()
 
