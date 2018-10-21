@@ -14,7 +14,7 @@ class MemeReview {
     
     init(withMemes memeNames: [String]) {
         for name in memeNames {
-            memesList.append(Meme(named: name))
+            memesList.append(Meme(named: "\(name) Meme"))
         }
         currentMeme = 0
     }

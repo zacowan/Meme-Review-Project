@@ -58,7 +58,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="yo9-hz-wbr"/>
                                 </constraints>
-                                <state key="normal" title="Next meme"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Next Meme"/>
                                 <connections>
                                     <action selector="nextMemeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Cs-Ni-mgf"/>
                                 </connections>
@@ -99,6 +100,7 @@
                         <outlet property="memeImageView" destination="8Hi-yi-rVt" id="9VN-96-wWC"/>
                         <outlet property="memeLevelLabel" destination="7sO-mH-c3T" id="7B6-zb-uF5"/>
                         <outlet property="memeNameLabel" destination="eXc-Vh-e3Q" id="P1r-r0-AvZ"/>
+                        <outlet property="memeReviewTitle" destination="iJo-nf-gfm" id="POY-oY-Gjq"/>
                         <outlet property="memeScoreLabel" destination="MKk-XO-Raw" id="655-AT-fbv"/>
                         <outlet property="newMemeScoreLabel" destination="T05-FS-WGe" id="gv2-mv-UZT"/>
                         <outlet property="newMemeScoreSlider" destination="8h9-UZ-fHt" id="Nov-Rg-aeR"/>

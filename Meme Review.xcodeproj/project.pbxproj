@@ -14,6 +14,7 @@
 		7080D333217A5F9800E5325D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7080D331217A5F9800E5325D /* LaunchScreen.storyboard */; };
 		7080D33B217A662C00E5325D /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080D33A217A662C00E5325D /* Meme.swift */; };
 		70958C0F217C2F3700740739 /* MemeReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70958C0E217C2F3700740739 /* MemeReview.swift */; };
+		70958C11217C396D00740739 /* ViewStyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70958C10217C396D00740739 /* ViewStyler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7080D334217A5F9800E5325D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7080D33A217A662C00E5325D /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
 		70958C0E217C2F3700740739 /* MemeReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeReview.swift; sourceTree = "<group>"; };
+		70958C10217C396D00740739 /* ViewStyler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStyler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				7080D32C217A5F9800E5325D /* Main.storyboard */,
+				70958C10217C396D00740739 /* ViewStyler.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70958C11217C396D00740739 /* ViewStyler.swift in Sources */,
 				7080D33B217A662C00E5325D /* Meme.swift in Sources */,
 				70958C0F217C2F3700740739 /* MemeReview.swift in Sources */,
 				7080D32B217A5F9800E5325D /* ViewController.swift in Sources */,
