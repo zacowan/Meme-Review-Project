@@ -20,15 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        viewStyler.buttonStyle(button: nextMemeButton)
-        viewStyler.scoreLabelStyle(label: memeScoreLabel)
-        viewStyler.scoreLabelStyle(label: newMemeScoreLabel)
-        viewStyler.nameLabelStyle(label: memeNameLabel)
-        viewStyler.levelLabelStyle(label: memeLevelLabel)
-        viewStyler.memeImageStyle(imageView: memeImageView)
-        viewStyler.titleLabelStyle(label: memeReviewTitle)
-        viewStyler.sliderStyle(slider: newMemeScoreSlider)
-        view.backgroundColor = #colorLiteral(red: 0.9013727119, green: 0.897710084, blue: 0.9449579832, alpha: 1)
+        applyViewStyling()
         updateMeme()
     }
     
@@ -48,6 +40,18 @@ class ViewController: UIViewController {
     
     func updateNewScoreLabel() {
         newMemeScoreLabel.text = "New Score: \(Int(newMemeScoreSlider.value))/10"
+    }
+    
+    func applyViewStyling() {
+        viewStyler.viewStyle(view: view)
+        viewStyler.buttonStyle(button: nextMemeButton)
+        viewStyler.scoreLabelStyle(label: memeScoreLabel)
+        viewStyler.scoreLabelStyle(label: newMemeScoreLabel)
+        viewStyler.nameLabelStyle(label: memeNameLabel)
+        viewStyler.levelLabelStyle(label: memeLevelLabel)
+        viewStyler.memeImageStyle(imageView: memeImageView)
+        viewStyler.titleLabelStyle(label: memeReviewTitle)
+        viewStyler.sliderStyle(slider: newMemeScoreSlider)
     }
     
     // References

@@ -59,7 +59,7 @@
                                     <constraint firstAttribute="height" constant="70" id="yo9-hz-wbr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Next Meme"/>
                                 <connections>
                                     <action selector="nextMemeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Cs-Ni-mgf"/>
                                 </connections>
