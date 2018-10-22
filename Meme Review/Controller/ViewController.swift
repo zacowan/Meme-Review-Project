@@ -12,8 +12,6 @@ class ViewController: UIViewController {
     
     let memeReview = MemeReview(withMemes: ["Dos Equis", "Drunk Baby", "Football", "Frozone", "Shaq", "Office"])
     
-    let viewStyler = ViewStyler()
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -40,15 +38,15 @@ class ViewController: UIViewController {
     }
     
     func applyViewStyling() {
-        viewStyler.styleView(view: view)
-        viewStyler.styleButton(button: nextMemeButton)
-        viewStyler.styleScoreLabel(label: memeScoreLabel)
-        viewStyler.styleScoreLabel(label: newMemeScoreLabel)
-        viewStyler.styleNameLabel(label: memeNameLabel)
-        viewStyler.styleLevelLabel(label: memeLevelLabel)
-        viewStyler.styleImageView(imageView: memeImageView)
-        viewStyler.styleTitleLabel(label: memeReviewTitle)
-        viewStyler.styleSlider(slider: newMemeScoreSlider)
+        ViewStyler.styleView(view: view)
+        ViewStyler.styleButton(button: nextMemeButton)
+        ViewStyler.styleScoreLabel(label: memeScoreLabel)
+        ViewStyler.styleScoreLabel(label: newMemeScoreLabel)
+        ViewStyler.styleNameLabel(label: memeNameLabel)
+        ViewStyler.styleLevelLabel(label: memeLevelLabel)
+        ViewStyler.styleImageView(imageView: memeImageView)
+        ViewStyler.styleTitleLabel(label: memeReviewTitle)
+        ViewStyler.styleSlider(slider: newMemeScoreSlider)
     }
     
     // References
