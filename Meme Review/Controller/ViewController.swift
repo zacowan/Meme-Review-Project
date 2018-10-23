@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let memeReview = MemeReview(withMemes: ["Dos Equis", "Drunk Baby", "Football", "Frozone", "Shaq", "Office"])
+    let memeReview = MemeReview(withMemes: ["Dos Equis", "Drunk Baby", "Football", "Frozone", "Shaq", "Office", "Kowalski", "England"])
     
     override func viewDidLoad() {
         super.viewDidLoad()
