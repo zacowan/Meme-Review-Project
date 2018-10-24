@@ -29,7 +29,7 @@ class ViewStyler {
     
     public static func styleLevelLabel(label: UILabel) {
         label.textColor = #colorLiteral(red: 0.1789666667, green: 0.1716, blue: 0.26, alpha: 1)
-        label.font = UIFont(name: "AvenirNext-Regular", size: 17)
+        label.font = UIFont(name: "AvenirNextCondensed-Regular", size: 17)
     }
     
     public static func styleNameLabel(label: UILabel) {
